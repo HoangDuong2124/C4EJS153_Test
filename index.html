@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="result">
+        <div class="image">
+          <img class="kq" src="bau.png" alt="" />
+        </div>
+        <div class="image">
+          <img class="kq" src="bau.png" alt="" />
+        </div>
+        <div class="image">
+          <img class="kq" src="bau.png" alt="" />
+        </div>
+      </div>
+
+      <button id="quay" onclick="turn()">Quay</button>
+      <!-- ------ĐẶT KẾT QUẢ ------------->
+      <div class="select">
+        <div class="image">
+          <img src="bau.png" alt="" />
+          <div class="number">0</div>
+        </div>
+        <div class="image">
+          <img src="cua.png" alt="" />
+          <div class="number">0</div>
+        </div>
+        <div class="image">
+          <img src="tom.png" alt="" />
+          <div class="number">0</div>
+        </div>
+        <div class="image">
+          <img src="ca.png" alt="" />
+          <div class="number">0</div>
+        </div>
+        <div class="image">
+          <img src="huou.png" alt="" />
+          <div class="number">0</div>
+        </div>
+        <div class="image">
+          <img src="ga.png" alt="" />
+          <div class="number">0</div>
+        </div>
+      </div>
+      <div style="width: 100%; display: flex">
+        <div class="note">
+          <p>Lưu ý:</p>
+          <p>
+            - Số lần đặt ở môt 'Hình' sẽ là số lần xuất hiện của cá 'Hình' trên
+            'Kết quả'
+          </p>
+          <p>- Tổng số điểm đặt trong 1 lần, tối đa là 3</p>
+        </div>
+        <button id="reset">Đặt lại</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
