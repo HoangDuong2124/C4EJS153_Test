@@ -52,8 +52,10 @@ function turn() {
       reset.disabled = false;
       reset.classList.remove("disabled");
     });
-
-    if (result.sort === selectedImages.sort) {
+    
+    const resultSort = result.sort();
+    const selectedImagesSort = selectedImages.sort();
+    if (resultSort[0] === selectedImagesSort[0]&&resultSort[1] === selectedImagesSort[1]&&resultSort[2] === selectedImagesSort[2]) {
       console.log("Bạn đã đoán đúng");
     } else {
       console.log("Bạn đã đoán sai");
